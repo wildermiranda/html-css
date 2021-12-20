@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+h1, h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.desc{
+    margin-right: auto;
+    width: 42em
+}

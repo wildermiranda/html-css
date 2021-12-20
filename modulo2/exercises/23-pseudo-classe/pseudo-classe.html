@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            SELETORES PERSONALIZADOS
+            
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elemento
+            > = children
+        */
+        
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border-radius: 8px;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            cursor: pointer;
+        }
+        /*
+        AS PSEUDO-CLASSES DEVEM ESTAR RELACIONADAS À UM ELEMENTO, CLASSE OU ID.
+        
+        UMA PSEUDO-CLASSE MODIFICA O ESTADO DE UM DETERMINADO ELEMENTO.
+        */
+        div:hover {
+            background-color: purple;
+        }
+
+        .d2:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">01</div>
+    <div class="d2">02</div>
+    <div class="d3">03</div>
+</body>
+</html>

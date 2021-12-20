@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            SELETORES PERSONALIZADOS
+            
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elemento
+            > = children
+        */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #80868b;
+        }
+
+        /* 
+        QUANDO UM LINK FOR VISITADO, ELE FICARÁ COM A COR AZUL CLARO
+        */
+        a:visited {
+            color: #6890E8;
+        } 
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /*
+        QUANDO O LINK FOR CLICADO, RAPIDAMENTE IRÁ FICAR ROXINHO
+        */
+        a:active {
+            color: #666EFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>
+        Para aprender HTML5 e CSS3, acesse o 
+        <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external" >
+            GitHub do Guanabara
+        </a>
+    </p>
+
+    <p>
+        Se quiser conhecer mais sobre os padrões, visite o site do
+        <a href="https://www.w3c.br/" target="_blank" rel="external">
+            Escritório do W3C no Brasil
+        </a>
+    </p>
+
+    <p>
+        Para acompanhar os cursos, acesse o
+        <a href="https://www.cursoemvideo.com/" target="_blank" rel="external">
+            Curso em Vídeo
+        </a>
+    </p>
+</body>
+</html>

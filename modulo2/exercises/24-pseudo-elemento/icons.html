@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            SELETORES PERSONALIZADOS
+            
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elemento
+            > = children
+        */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap');
+
+        body {
+            text-align: center;
+            font-size: 1.4em;
+            font-family: 'Open Sans', sans-serif;
+            color: #58555A;
+        }
+
+        ul {
+            list-style: none;   
+        }
+
+        /*
+        OS PSEUDO-ELEMENTOS PODEM AGIR NOS INDENTIFICADORES, CLASSES E ELEMENTOS. ELES CONFIGURAM DIRETAMENTE O CONTEÚDO PERIFÉRICO DO ELEMENTO.
+        */
+        ul li::before {
+            content:'🍔';
+        }
+
+        ul li::after {
+            content:'🍟';   
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="line"> Line 1 </li>
+            <li class="line"> Line 2 </li>
+            <li class="line"> Line 3 </li>
+        </ul>     
+    </div> 
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #8D52E3;
+    margin: 0;
+}
+
+
+header {
+    padding: 10px;
+    margin: 10px;
+}
+h1 {
+    font-size: 4.5em;
+    color: rgba(255, 255, 255, 0.897);
+}
+nav a {
+    text-decoration: none;
+    color: #121212;
+    font-weight: 700;
+    margin: 5px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    background-color: #FAF8EB;
+    color: rgba(0, 0, 0, 0.658);
+    padding: 50px;
+    margin: 50px 0 500px 0;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+article h2 {
+    font-size: 30px;
+}
+#especial {
+    color: rebeccapurple
+}
+
+
+footer {
+    background-color: #F6F4F7;
+    color: rgba(0, 0, 0, 0.658);
+    text-align: center;
+    padding: 10px;   
+}
+.social-network {
+    margin-top: 10px;
+}
+footer div a {
+    margin-left: 10px;
+}
+
+.weight {
+    font-weight: 600;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            SELETORES PERSONALIZADOS
+            
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elemento
+            > = children
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            width: 150px; 
+        }
+        
+        span {
+            background-color: wheat;
+            cursor: pointer;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <div>
+        <span>Passe o mouse aqui!</span>
+        <p>Surpresa! 🖖</p>
+    </div>
+</body>
+</html>

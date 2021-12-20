@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #D98466, #F2AA80);
+}
+
+p {
+    text-align: justify;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(173, 106, 81, 0.898);
+    margin: auto;
+    width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #733E39;
+    text-shadow: 1px 1px 2px rgba(131, 72, 59, 0.733);
+}
+
+h2 {
+    color: #A65B4B;
+}

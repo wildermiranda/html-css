@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body {
+    background-color: #cdffe6;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+h1, h2 {
+    color: #00324b;
+}
+
+/*
+O "id" no documento HTML é o "#" em CSS, significam à mesma coisa. Um precisa do outro para criar um seletor personalizado.
+*/
+#titulo-principal {
+    text-align: center;
+    font-size: 2.5em;
+    color: #00324b;
+    text-shadow: 2px 2px 5px #728f80;
+}
+
+/* O "class" no documento HTML é o "." em CSS, significam à mesma coisa. Um precisa do outro para criar um seletor personalizado. */
+
+.topico {
+    text-align: right;
+}
+
+.texto {
+    text-align: justify;
+}
+
+
+abbr {
+    text-decoration: none;
+}
+
