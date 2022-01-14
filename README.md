@@ -1,1 +1,1 @@
-Curso gratuito do **Curso em Vídeo**
+Curso gratuito de HTML5 e CSS3 do **Curso em Vídeo**
