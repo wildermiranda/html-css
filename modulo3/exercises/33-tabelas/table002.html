@@ -15,18 +15,29 @@
             align-items: center;
             justify-content: center;
         }
+        main {
+            width: 450px;
+        }
 
         h1 {
             text-align: center;
         }
 
         table {
+            width: 100%;
             border-collapse: collapse;
             margin-bottom: 2rem;
         }
 
+        caption {
+            font-size: 1em;
+            padding: 10px 0;
+            font-weight: 600;
+            background-color: lightgrey;
+        }
+
         thead, tfoot {
-            background-color: peachpuff;
+            background-color: rgb(177, 175, 175);
         }
         
         td, th {
@@ -45,6 +56,7 @@
         <!--
             Anatomia para tabelas grandes:
             TABLE
+                CAPTION (LEGENDA DA TABELA)
                 THEAD
                     TR, TD, TH
                 TBODY
@@ -52,11 +64,14 @@
                 TFOOT
                     TR, TD, TH
         -->
+        
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <!-- O propriedade scope="col" define de forma semântica que os dados do cabeçalho, estão posicionados abaixo, em forma de coluna. -->
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -171,8 +186,9 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de habitantes</th>
-                    <td><strong>213.317.639</strong></td>
+                    <!-- O propriedade scope="row" define de forma semântica que os dados do cabeçalho, estão posicionados na mesma linha-->
+                    <th scope="row">Total de habitantes</th>
+                    <td class="number"><strong>213.317.639</strong></td>
                 </tr>
             </tfoot>
         </table>
