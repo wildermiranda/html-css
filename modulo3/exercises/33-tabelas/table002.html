@@ -19,10 +19,6 @@
             width: 450px;
         }
 
-        h1 {
-            text-align: center;
-        }
-
         table {
             width: 100%;
             border-collapse: collapse;
@@ -30,16 +26,24 @@
         }
 
         caption {
+            padding-top: 1.5rem;
+            padding-bottom: 10px;
             font-size: 1em;
-            padding: 10px 0;
             font-weight: 600;
-            background-color: lightgrey;
         }
 
         thead, tfoot {
-            background-color: rgb(177, 175, 175);
+            background-color: rgb(175, 175, 175);
         }
         
+        /* EFEITO ZEBRADO: */
+        tbody > tr:nth-child(odd) {
+            background-color: blanchedalmond;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
         td, th {
             padding: 8px;
             border: 1px solid #000;
@@ -52,7 +56,6 @@
 </head>
 <body>
     <main>
-        <h1>Tabelas grandes</h1>
         <!--
             Anatomia para tabelas grandes:
             TABLE
