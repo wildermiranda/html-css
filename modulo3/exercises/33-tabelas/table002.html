@@ -23,6 +23,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 2rem;
+            position: relative;
         }
 
         caption {
@@ -36,13 +37,22 @@
             background-color: rgb(175, 175, 175);
         }
         
+        thead > tr {
+            position: sticky;
+            top: -1px;
+
+            background-color: rgb(175, 175, 175);
+        }
+
         /* EFEITO ZEBRADO: */
+        
         tbody > tr:nth-child(odd) {
             background-color: blanchedalmond;
         }
         tbody > tr:nth-child(even) {
             background-color: lightgray;
         }
+
 
         td, th {
             padding: 8px;
