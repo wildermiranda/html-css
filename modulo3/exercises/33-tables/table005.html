@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding: 2%;
+        }
+
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding-bottom: 5px;
+        }
+
+        .grupo-colunas {
+            background-color: #F0D9FF;
+        }
+        .coluna-profissao {
+            background-color: #F3F1F5;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Modificando colunas com o colgroup -->
+        <colgroup>
+            <col class="grupo-colunas" span="2">
+            <col class="coluna-idade">
+            <col class="coluna-profissao">
+        </colgroup>
+        
+        
+        <caption>Colorindo colunas com o colgroup</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juca</td>
+                <td>M</td>
+                <td>20</td>
+                <td>IOS developer</td>
+            </tr>
+
+            <tr>
+                <td>Jadon</td>
+                <td>M</td>
+                <td>26</td>
+                <td>Back-end developer</td>
+            </tr>
+
+            <tr>
+                <td>Jasmine</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Front-end developer</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
