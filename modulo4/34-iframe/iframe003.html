@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        iframe {
+            width: 500px;
+            height: 500px;
+            padding: 1rem;
+            box-shadow: 0 6px 10px 0 rgb(0 0 0 / 20%);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="pages/page.html" target="frame">Page 1</a></li>
+        <li><a href="pages/page002.html" target="frame">Page 2</a></li>
+        <li><a href="pages/page003.html" target="frame">Page 3</a></li>
+    </ul>
+
+    <iframe 
+    srcdoc="<h1>Escolha uma das opções acima!</h1>" 
+    frameborder="0" name="frame"></iframe>
+</body>
+</html>
