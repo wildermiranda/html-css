@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        iframe {
+            width: 500px;
+            height: 500px;
+            box-shadow: 0 6px 10px 0 rgb(0 0 0 / 20%);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loading javascript page</h1>
+
+    <h2>Iframe seguro:</h2>
+    <iframe src="pages/page005.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+    <br>
+
+    <h2>Iframe com algumas permissões:</h2>
+    <iframe src="pages/page005.html" frameborder="0" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
+</body>
+</html>
