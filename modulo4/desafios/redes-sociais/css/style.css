@@ -14,6 +14,9 @@ html, body {
     background-color: #121212;
 }
 
+
+
+
 main {
     height: 100vh;
 
@@ -22,11 +25,22 @@ main {
     justify-content: center;
 }
 
-#phone {
-    width: 352px;
-    height: 706px;
-   
 
-    background-image: url(../imagens/frame-iphone13.png);
+#computer {
+    width: 1000px;
+    height: 619px;
+    
+    background-image: url(../images/frame-macbook.png);
     background-repeat: no-repeat;
+
+    position: absolute;
+}
+
+
+#screen {
+    width: 742px;
+    height:466px;
+    position: relative;
+    top: 75px;
+    left: 129px;
 }
