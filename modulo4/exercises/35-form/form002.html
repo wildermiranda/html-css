@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        div {
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="user">Usuário:</label>
+            <input type="text" name="user" id="user" minlength="5" maxlength="15" size="20" placeholder="Nome do usuário" required>
+        </div>
+
+        <div>
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" minlength="5" maxlength="10" size="10" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
