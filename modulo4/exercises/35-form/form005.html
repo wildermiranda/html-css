@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: 'Space Mono', monospace;
+        }
+
+        fieldset {
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.js" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            
+            <div>
+                <input type="radio" name="sexo" id="man" value="Masculino" checked>
+                <label for="man">Masculino</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="sexo" id="woman" value="Feminino">
+                <label for="woman">Feminino</label>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Favorite sports</legend>
+
+            <div>
+                <input type="checkbox" name="soccer" id="soccer" checked>
+                <label for="soccer">Futebol</label></div>
+            <div>
+                <input type="checkbox" name="volleyball" id="volleyball">
+                <label for="volleyball">Vôlei</label>
+            </div>
+            <div>
+                <input type="checkbox" name="basketball" id="basketball"> 
+                <label for="basketball">Basquete</label>
+            </div>
+        </fieldset>
+        
+        <input type="submit" value="Send">
+        <input type="submit" value="Clear">
+    </form>
+</body>
+</html>
