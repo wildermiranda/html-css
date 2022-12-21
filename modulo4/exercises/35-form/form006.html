@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: 'Space Mono', monospace;
+        }
+
+        div {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="Cadastro.js" method="post">
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color" value="#C7CDFB">
+        </div>
+
+        <div>
+            <label for="level">Level:</label>
+            <input type="range" name="level" id="level" min="1" max="5" value="1">
+        </div>
+
+        <div>
+            <label for="file">File:</label>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
