@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: 'Space Mono', monospace;
+        }
+
+        div {
+            margin: 1rem 0;
+        }
+
+        textarea {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.js" method="post">
+        <div>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <optgroup label="Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj" selected>Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="rn">Rio Grande do Norte</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="ma">Maranhão</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="cargo">Área de atuação:</label>
+            <input type="text" name="cargo" id="cargo" list="listaDeCargos">
+
+            <datalist id="listaDeCargos">
+                <option value="Back-end">Back-end Developer</option>
+                <option>Front-end Developer</option>
+                <option>IOS Developer</option>
+                <option>Big data</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="message">Mensagem:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Envie uma mensagem de texto 😃"></textarea>
+        </div>
+
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
