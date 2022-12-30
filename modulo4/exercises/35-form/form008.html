@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: 'Space Mono', monospace;
+        }
+
+        div {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <div>
+            <label for="number1">Digite um número:</label>
+            <input type="number" name="number1" id="number1" min="0" max="50" required>
+        </div>
+        
+        <div>
+            <label for="number2">Digite outro número:</label>
+            <input type="number" name="number2" id="number2" min="0" max="50" required 
+            oninput="produto.innerHTML = Number(number1.value) * Number(number2.value)">
+        </div>
+
+        <div>
+            <label for="produto">Produto:</label>
+            <output id="produto">0</output>
+        </div>
+    </form>
+</body>
+</html>
