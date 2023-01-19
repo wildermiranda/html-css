@@ -1,0 +1,10 @@
+* {
+    font-family: monospace;
+    color: #4E4E4E;
+}
+
+header, main {
+    width: 90%;
+}
+
+article::after {content: 'Esse artigo foi impresso através do site News';}
