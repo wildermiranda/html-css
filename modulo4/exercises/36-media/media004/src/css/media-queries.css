@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+    #computer, #printer, #smartphone {display: none;}
+    
+    #tablet {display: inline-block;} 
+}
+
+@media screen and (min-width: 1024px) {
+    #tablet, #printer, #smartphone {display: none;}
+    
+    #computer {display: inline-block;} 
+}
+
+@media print {
+    #computer, #tablet, #smartphone {display: none;}
+    
+    #printer {display: inline-block;} 
+}
