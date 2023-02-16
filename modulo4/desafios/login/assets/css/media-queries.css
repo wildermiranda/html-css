@@ -1,0 +1,43 @@
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 2rem 0;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+        background-size: 140% 140%;
+        animation: gradient-animation 6s ease infinite;
+    }
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    section {
+        width: 50%;
+    }
+}
